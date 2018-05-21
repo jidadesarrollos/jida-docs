@@ -11,6 +11,39 @@ class \jida\Core\Controller extends Controller{
  ....
 }
 ```
+Parámetros
+---
+- **$temaLayout**: Define el tema de diseño a implementar en la aplicacion.
+- **$multiidioma**: Define si la aplicación maneja multiples idiomas, Si es colocada en true el controller validara la variable $idioma y la incluira en las urls.
+- **$layout**: Define el layout a usar por el controlador.
+- **$idioma**:Define el idioma manejado al momento de la ejecucion del controlador.
+- **$tituloPagina**: Define el titulo de la pagina a colocar en la etiqueta title del head del sitio.
+- **$metaDescripcion**: Define el contenido de la meta-etiqueta description para uso de los buscadores.
+- **$preEjecucion**: Define un metodo a ejecutar previo a la ejecucion de metodos accedidos por url.
+- **$postEjecucion**: Define un metodo a ejecutar posterior a la ejecucion de metodos accedidos por url.
+- **$modelo**: Define el Modelo a usar en el controlador.
+- **$modelos**: Permite definir los modelos a usar en el controlador.
+- **$vista**: Permite especificar una vista para el método.
+- **$data**: Arreglo que contiene la información que desee pasarse a la vista.
+- **$requireJS**: Archivos Javascript Requeridos.
+- **$requireCSS**: Archivos CSS Requeridos en la vista.
+- **$url**: Define la URL principal de acceso para el controlador (En caso de ser usada).
+- **$post**: Data POST de Formulario.
+- **$get**: Data Get pasada por url.
+- **$request**: Contiene la data de solicitud o petición.
+- **$_clase**: Nombre de la clase.
+- **$_nombreController**: Nombre del controlador.
+- **$_modulo**: Nombre del módulo.
+- **$_metodo**: Nombre del método.
+- **$_controlador**: Nombre del controlador.
+- **$__url**: URL Actual Registra la URL ingresada en el navegador.
+- **$_controlador**: Nombre del controlador.
+- **$dv**: Instancia de clase DataVista.
+- **$usuario**: Objeto User instanciado al iniciar sesion. Si la sesion no esta iniciada retorna vacio.
+- **$manejoParams**: Define el funcionamiento que realiza el framework para manejar los parametros en las URL.
+- **$_controladorURL**: Registra el nombre del controlador para la url.
+- **$_urlBase**: Registra el nombre de la url base.
+
 **Métodos:**
 
 1. __construct(): En términos generales, éste método se encarga de construir las urls partiendo de la url base, es decir, recibe los parámetros de la url base y desde aquí­ va recibiendo y contruyendo las rutas de las url que contienen las data que conforman las distintas pantallas, por ejemplo: dev.jida.local(url base)/Data(información gestionada desde los controladores)/vista(pantalla, ya sean formularios, tablas, etc.). Adicionalmente, también recibe los parámetros de idiomas, ya que al construir las url, éstas reciben el nombre de la vista con el idioma determinado a mostrar, de igual manera, de trabajar con sesiones de usuario, éste método valida si la sesión está¡ abierta o cerrada para que el usuario, o bien sea dirigido al home principal, o bien a la pantalla de inicio de sesión.

@@ -49,7 +49,7 @@ Parámetros
 - **private $idsResultantes**
 - **private $valoresIniciales**
 - **private $_clase**
-- **private $resultBD**
+- **protected $resultBD**
 - **private $reflector**
 - **private $_paginar**
 - **private $_paginaConsultada**

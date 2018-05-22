@@ -1,10 +1,10 @@
-# Formulario
-Renderiza formularios configurados en html visible para el usuario, permite la validación de los mismos y la definición de su estructura mediante los distintos métodos que aplica la clase.
+# Selector
+Clase para Selector.
 
 Sinopsis
 ---
 ```php
-class Formulario extends Selector {
+class Selector {
  ....
 }
 ```

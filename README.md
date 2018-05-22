@@ -20,6 +20,6 @@ Framework/init/htaccess-example.
 
 - [Controllers](Core/Controllers.md)
 - [Formularios](Render/Formulario.md)
-- [Selector](Core/Controllers.md)
+- [Selector](Render/Selector.md)
 - [JVista](Core/Controllers.md)
 - [DataModel](Core/Controllers.md)

@@ -101,14 +101,6 @@ Métodos:
 32. **protected function layout($layout)**: Define el layout a utilizar.
 33. **protected function data($data, $valor = "")**: Asigna los parametros pasados para que puedan ser accedidos desde la vista.
 
-Parámetros obsoletos:
----
-1. **$tituloPagina**: Define el titulo de la pagina a colocar en la etiqueta title del head del sitio.
-2. **$metaDescripcion**: Define el contenido de la meta-etiqueta description para uso de los buscadores.
-3. **$data**: Arreglo que contiene la información que desee pasarse a la vista.
-
-
 Métodos obsoletos:
 ---
-1. **protected function getString($valor)**: Al ingresar un valor, nos devuelve el mismo valor en tipo de dato string. Para lograrlo éste método usa otro método de nombre obtString().
-2. **protected function obtEntero($valor)**: Al ingresar un valor, nos devuelve el mismo valor en tipo de dato entero. Para lograrlo éste método usa otro método de nombre entero().
+1. **function obtenerVista($function = "")**: Renderiza la vista.

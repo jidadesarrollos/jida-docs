@@ -1,4 +1,4 @@
-# Controllers
+# Formulario
 La clase controller permite la ultilización de métodos comunes últiles para facilitar el ejercicio del desarrollo de cualquier proyecto.
 
 # JIDA FRAMEWORK
@@ -7,7 +7,7 @@ Framework para aplicaciones web, con sintaxis simple, actual y elegante.
 Sinopsis
 ---
 ```php
-class \jida\Core\Controller extends Controller{
+class Formulario extends Selector {
  ....
 }
 ```

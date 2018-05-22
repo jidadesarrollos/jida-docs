@@ -1,41 +1,69 @@
-# Controllers
-La clase controller permite la ultilización de métodos comunes últiles para facilitar el ejercicio del desarrollo de cualquier proyecto.
+# JVista
+Clase para manejo de vistas dinámicas.
 
 Sinopsis
 ---
 ```php
-class Controller{
+class JVista {
  ....
 }
 ```
 Parámetros
 ---
-- **$temaLayout**: Define el tema de diseño a implementar en la aplicacion.
-- **$multiidioma**: Define si la aplicación maneja multiples idiomas, Si es colocada en true el controller validara la variable $idioma y la incluira en las urls.
-- **$layout**: Define el layout a usar por el controlador.
-- **$idioma**:Define el idioma manejado al momento de la ejecucion del controlador.
-- **$preEjecucion**: Define un metodo a ejecutar previo a la ejecucion de metodos accedidos por url.
-- **$postEjecucion**: Define un metodo a ejecutar posterior a la ejecucion de metodos accedidos por url.
-- **protected $modelo**: Define el Modelo a usar en el controlador.
-- **protected $modelos**: Permite definir los modelos a usar en el controlador.
-- **$vista**: Permite especificar una vista para el método.
-- **$requireJS**: Archivos Javascript Requeridos.
-- **$requireCSS**: Archivos CSS Requeridos en la vista.
-- **protected $url**: Define la URL principal de acceso para el controlador (En caso de ser usada).
-- **private $post**: Data POST de Formulario.
-- **private $get**: Data Get pasada por url.
-- **private $request**: Contiene la data de solicitud o petición.
-- **private $_clase**: Nombre de la clase.
-- **private $_nombreController**: Nombre del controlador.
-- **protected $_modulo**: Nombre del módulo.
-- **protected $_metodo**: Nombre del método.
-- **protected $_controlador**: Nombre del controlador.
-- **$__url**: URL Actual Registra la URL ingresada en el navegador.
-- **$dv**: Instancia de clase DataVista.
-- **$usuario**: Objeto User instanciado al iniciar sesion. Si la sesion no esta iniciada retorna vacio.
-- **$manejoParams**: Define el funcionamiento que realiza el framework para manejar los parametros en las URL.
-- **private $_controladorURL**: Registra el nombre del controlador para la url.
-- **private $_urlBase**: Registra el nombre de la url base.
+- **private $dataVista**.
+- **$ordenamientos**.
+- **$buscador**.
+- **private $_debug**.
+- **private $nroFilas**.
+- **private $_ce**.
+- **private $paginasMostradas**.
+- **private $totalPaginas**.
+- **private $titulos**.
+- **private $titulosKey**.
+- **private $contenedorAcciones**.
+- **private $accionesFila**.
+- **private $_parametrosGET**.
+- **$camposOrder**: Permite definir los campos de ordenamiento para cada titulo.
+- **private $configFilaOpciones**: Define la configuracion para la fila de opciones de la vista.
+- **private $ejecucion;**.
+- **private $_ordenamientos;**.
+- **private $_tipoOrdenamiento;**: Tipo de ordenamiento, asc o desc.
+- **private $_campoOrdenar;**: Nombre del campo con el cual se solicita ordenar la consulta.
+- **private $titulo;**.
+- **private $_funcionData;**: Funcion pasada por el usuario a ejecutar sobre la data obtenida.
+- **private $_parametrosFuncionData;**.
+- **private $clausulas;**: Arreglo de clausulas agregadas a la consulta a base de datos implementada por el objeto.
+- **private $acciones;**: acciones Permite definir acciones para toda la vista.
+- **$controlFila;**: Define si las filas llevaran algún control.
+- **$funcionNoRegistros;**.
+- **private $parametroPagina;**.
+- **private $usaBD;**.
+- **private $queryString;**: Parametros pasados como querystring y que son manipulados por el objeto.
+- **$analizaURL;**: Define si debe analizarse la URL, si esta en true se tratara la url de conformidad con la estructura de urls usada por JidaFramework.
+- **private $mensajeNoRegistros;**: Mensaje a mostrar si no se consigues registros.
+- **private $htmlPersonalizado;**.
+- **private $filtros;**: definir los objetos de filtro.
+- **private $tabla;**: Objeto TablaSelector.
+- **private $campos;**.
+- **private $nameInputLinea;**.
+- **private $configTabla;**.
+- **private $configAcciones;**.
+- **private $configAccionesFila;**.
+- **private $configContenedorAcciones;**.
+- **private $configFiltros;**.
+- **private $configArticleVista;**.
+- **private $configSeccionForm;**.
+- **private $registros;**: Data obtenida de la consulta a base de datos.
+- **private $totalRegistros;**: Numero total de registros obtenidos.
+- **private $paginador;**: objeto ListaSelector como paginador.
+- **private $paginaActual;**.
+- **private $configPaginador;**.
+- **private $paginaConsulta;**: Página donde consulta el paginador para traer nuevos registros.
+- **private $objeto;**: var object $objeto Objeto implementado.
+- **private $urlActual;**.
+- **private $idVista;**.
+- **private $data;**.
+- **private $keys;**.
 
 Métodos:
 ---

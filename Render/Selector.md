@@ -1,5 +1,5 @@
 # Selector
-Clase para Selector.
+Clase que permite renderizar combos selectores html con su data respectiva, mediante la aplicación de los métodos de dicha clase.
 
 Sinopsis
 ---
@@ -29,28 +29,30 @@ Parámetros
 
 Métodos:
 ---
-1. **function __construct($form = "", $dataEdicion = "")**.
-2. **private function _cargarFormulario($form, $dataEdicion)**: Carga el Formulario a mostrar, verifica si existe un archivo json para el formulario pedido, carga la informacion del mismo y la procesa.
-3. **private function _configuaricionInicial()**.
-4. **private function _procesarUpdate($dataEdicion)**: Procesa la informacion para renderizar el formulario en modo update.
-5. **function removerTagForm($class = "form-alone")**: Remueve la etiqueta FORM del formulario, esta funcion puede llamarse cuando se deseen integrar múltiples formularios en una misma pantalla.
-6. **private function _obtenerDataUpdate()**.
-7. **private function validarJson()**.
-8. **private function _botonEnvio()**: Genera el botón de envio si es requerido.
-9. **function css($elemento, $css = "")**: Get y Set para css de los componentes del formulario, si el método es usado como setter retornará el mismo objeto form, si es usado como getter retornará la clase del elemento si es conseguido, caso contrario retornará un string vacio.
-10. **private function _procesarEstructura()**: Procesa la estructura del formulario.
-11. **private function _obtSelector($_campo)**: Define el objeto SelectorInput a retornar.
-12. **private function _instanciarCampo($_campo)**: Genera la instancia de un SelectorInput.
-13. **private function _instanciarCamposConfiguracion()**: Instancia los campos configurados del formulario, gestiona los campos del formulario realizando una instancia del objeto SelectorInput sobre cada campo para su posterior renderizacion.
-14. **function titulo($titulo, $selector = "h2", $class = "page-header")**: Permite agregar un título al formulario.
-15. **function enArreglo()**: Retorna los campos del formularo en un arreglo.
-16. **function fieldsets($fieldsets)**: Agrega Fielsets y legends a la estructua del formulario.
-17. **function render()**: Renderiza un formulario, genera el HTML de un formulario creado en el Framework, con toda la personalización creada.
-18. **function imprimirBotones($plantilla = TRUE)**: Renderiza el HTML de los botones agregados al formulario.
-19. **private function _obtTemplate($template, $params)**: Renderiza el contenido en plantillas predeterminadas.
-20. **function boton($boton, $label = "", $selector = "button")**: Permite configurar botones para el formulario.
-21. **function validar(&$data = "")**: Valida un formulario, verifica que la data pasada cumpla con las validaciones registradas en el formulario.
-22. **static function msj($type, $msj, $redirect = false)**: Crea un mensaje a mostrar en un grid u objeto Tipo Vista.
-23. **function campo($id)**: Permite acceder al objeto selector de un campo.
-24. **function obtConsultaUpdate()**.
-25. **function obtErrores()**.
+1. **function __construct($selector = "", $attr = [])**.
+2. **function getSelector($tabs = 0)**: Genera el HTML del selector instanciado.
+3. **private function getElementosData()**: Verifica si existen elementos datas que deban ser agregados al selector y los agrega.
+4. **private function getAttr()**: Verifica si existen elementos datas que deban ser agregados al selector y los agrega.
+5. **public static function crear($selector, $atributos = array(), $content = "", $tabs = 0)**: Genera un selector HTML.
+6. **public static function crearBreadCrumb($data, $config = [])**: Crea una lista OL con estilo bootstrap de breadcrumb.
+7. **public static function crearLista($css, $content)**: Genera el codigo HTML de una Lista ul.
+8. **static function crearUL($content, $attrUL = array(), $attrLi = array())**.
+9. **public static function crearInput($value, $valores = "")**: Crea un boton Input, el valor por defecto es un submit, permite modificar los atributos del control a crear por medio de un arreglo asociativo con los datos que se desean.
+10. **protected function establecerAtributos($arr, $clase = "")**.
+11. **static function addTabs($nums)**.
+12. **static function obt($selector)**: Genera una instancia selector y la retorna.
+13. **function render()**.
+14. **protected function renderContenido()**.
+15. **private function selectorCierre()*.
+16. **protected function renderAttr()**.
+17. **protected function obtClases()**.
+18. **function addClass($clase)**.
+19. **function removerClass()**.
+20. **function data($data = "", $valor = "")**.
+21. **function attr($attr, $valor = "")**: Manejo de atributos del Selector permite obtener o asignar valor a un selector.
+22. **function innerHTML($innerHTML = "")**.
+23. **function addInicio($html)**: Agrega contenido al principio del innerHTML.
+24. **function addFinal($html)**: Agrega contenido al final del innerHTML.
+25. **function envolver($selector, $attr = [])**: El nuevo selector creado se convertirá en el innerHTML.
+26. **function ejecutarFuncion($funcion)**: Ejecuta una funcion del programador sobre el selector.
+27. **function obtSelector()**: Retorna el tipo de selector.

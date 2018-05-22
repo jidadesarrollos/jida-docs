@@ -1,9 +1,6 @@
 # Formulario
 Renderiza formularios configurados en html visible para el usuario, permite la validación de los mismos y la definición de su estructura mediante los distintos métodos que aplica la clase.
 
-# JIDA FRAMEWORK
-Framework para aplicaciones web, con sintaxis simple, actual y elegante.
-
 Sinopsis
 ---
 ```php
@@ -13,33 +10,48 @@ class Formulario extends Selector {
 ```
 Parámetros
 ---
-- **$temaLayout**: Define el tema de diseño a implementar en la aplicacion.
-- **$multiidioma**: Define si la aplicación maneja multiples idiomas, Si es colocada en true el controller validara la variable $idioma y la incluira en las urls.
-- **$layout**: Define el layout a usar por el controlador.
-- **$idioma**:Define el idioma manejado al momento de la ejecucion del controlador.
-- **$preEjecucion**: Define un metodo a ejecutar previo a la ejecucion de metodos accedidos por url.
-- **$postEjecucion**: Define un metodo a ejecutar posterior a la ejecucion de metodos accedidos por url.
-- **$modelo**: Define el Modelo a usar en el controlador.
-- **$modelos**: Permite definir los modelos a usar en el controlador.
-- **$vista**: Permite especificar una vista para el método.
-- **$requireJS**: Archivos Javascript Requeridos.
-- **$requireCSS**: Archivos CSS Requeridos en la vista.
-- **$url**: Define la URL principal de acceso para el controlador (En caso de ser usada).
-- **$post**: Data POST de Formulario.
-- **$get**: Data Get pasada por url.
-- **$request**: Contiene la data de solicitud o petición.
-- **$_clase**: Nombre de la clase.
-- **$_nombreController**: Nombre del controlador.
-- **$_modulo**: Nombre del módulo.
-- **$_metodo**: Nombre del método.
-- **$_controlador**: Nombre del controlador.
-- **$__url**: URL Actual Registra la URL ingresada en el navegador.
-- **$_controlador**: Nombre del controlador.
-- **$dv**: Instancia de clase DataVista.
-- **$usuario**: Objeto User instanciado al iniciar sesion. Si la sesion no esta iniciada retorna vacio.
-- **$manejoParams**: Define el funcionamiento que realiza el framework para manejar los parametros en las URL.
-- **$_controladorURL**: Registra el nombre del controlador para la url.
-- **$_urlBase**: Registra el nombre de la url base.
+- **private $layout**
+- **$name**
+- **$tagPost**
+- **$method**
+- **$action**
+- **$enctype**
+- **$target**
+- **public $setHtmlEntities**
+- **$tagForm**
+- **$botonEnvio**
+- **$jidaValidador**
+- **private $_consultaUpdate**
+- **$_labelBotonEnvio**
+- **private $_numeroExcepciones**
+- **private $_fieldsets**
+- **private $_id**
+- **$labels**
+- **private $_titulo**
+- **private $_ce**
+- **private $_arrayOrden**
+- **private $_plantillaItem**
+- **private $_plantillaBotones**
+- **private $_plantillaTitulo**
+- **private $_configuracion**
+- **private $_columnasTotal**
+- **private $_css**
+- **private $_cssTitulo**
+- **private $html**
+- **private $_exprEstructura**
+- **private $_path**
+- **private $_campos**
+- **private $_estructura**
+- **private $_totalCampos**
+- **private $_filaPivote**
+- **$_botones**
+- **private $_idEdicion**
+- **private $_dataUpdate**
+- **private $_dataUpdateMultiple**
+- **private $_errores**
+- **private $_validaciones**
+- **private $_dataCampos**
+
 
 Métodos:
 ---
@@ -76,13 +88,6 @@ Métodos:
 31. **obtJson($path)**: Retorna un arreglo a partir de un archivo JSON.
 32. **layout($layout)**: Define el layout a utilizar.
 33. **data($data, $valor = "")**: Asigna los parametros pasados para que puedan ser accedidos desde la vista.
-
-Parámetros obsoletos:
----
-1. **$tituloPagina**: Define el titulo de la pagina a colocar en la etiqueta title del head del sitio.
-2. **$metaDescripcion**: Define el contenido de la meta-etiqueta description para uso de los buscadores.
-3. **$data**: Arreglo que contiene la información que desee pasarse a la vista.
-
 
 Métodos obsoletos:
 ---

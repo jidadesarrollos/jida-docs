@@ -19,7 +19,7 @@ Framework/init/htaccess-example.
 # Clases
 
 - [Controllers](Core/Controllers.md)
-- [Formularios](Core/Controllers.md)
+- [Formularios](Render/Formulario.md)
 - [Selector](Core/Controllers.md)
 - [JVista](Core/Controllers.md)
 - [DataModel](Core/Controllers.md)

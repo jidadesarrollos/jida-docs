@@ -67,39 +67,48 @@ Parámetros
 
 Métodos:
 ---
-1. **function __construct()**: En términos generales, éste método se encarga de construir las urls partiendo de la url base, es decir, recibe los parámetros de la url base y desde aquí­ va recibiendo y contruyendo las rutas de las url que contienen las data que conforman las distintas pantallas, por ejemplo: dev.jida.local(url base)/Data(información gestionada desde los controladores)/vista(pantalla, ya sean formularios, tablas, etc.). Adicionalmente, también recibe los parámetros de idiomas, ya que al construir las url, éstas reciben el nombre de la vista con el idioma determinado a mostrar, de igual manera, de trabajar con sesiones de usuario, éste método valida si la sesión está abierta o cerrada para que el usuario, o bien sea dirigido al home principal, o bien a la pantalla de inicio de sesión.
-2. **protected function __conf()**: Retorna el objeto de configuración de la aplicación. 
-3. **function validarVarGlobales($bug = FALSE)**: Procesa las variables de parametros globales, es decir, valida que la información que viajan por los métodos $_POST, $_GET, $_REQUEST sean correctos, y no generen error.
-4. **private function instanciarHelpers()**: Permite procesar información posterior a la ejecucion de metodos accedidos por url.
-5. **private function instanciarModelos()**: Permite procesar información mediante los modelos a usar en el controlador.
-6. **protected function obtString($valor)**: Convierte el contenido de una variable en codigo aceptado HTML (string).
-7. **protected function entero($valor)**: Valida y filtra el contenido de una variable como Entero.
-8. **protected function decimal($valor)**: Valida y filta el contenido de una variable como Float.
-9. **protected function process()**: Ejecuta un formulario de manera generica, El formulario debe ser pasado por medio de un parametro get "form". Si el formulario debe ejecutarse en modo de edición se debe pasar un parametro get "id".
-10. **protected function solicitudAjax()**: Valida si se ha realizado una solicitud ajax, utilizando un plugin de javascript de nombre jd.ajax.
-11. **protected function _setUrl($url)**: configura la propiedad url, para pasarla a un objeto $this->url.
-12. **protected function obtPost($param)**: Retorna parámetros obtenidos mediante método post, false sino hay parámetros.
-13. **protected function get($param = "")**: Retorna el valor get solicitado, false si el valor no es conseguido.
-14. **protected function post($param = "", $nuevoValor = "")**: Retorna el valor post solicitado, false si el valor no es conseguido.
-15. **protected function request($param = "", $nuevoValor = "")**: Retorna el valor request solicitado, false si el valor no es conseguido.
-16. **protected function urlActual($valor = 1)**: Devuelve la URL correspondiente al metodo que hace la llamada.
-17. **static function convertirNombreAUrl($nombre)**: Convierte un nombre en la estructura estándar de urls.
-18. **protected function urlController($ctrl = "")**: Retorna la url del controlador actual, es decir, validará si el parámetro pasado es una cadena, o si el parámetro no existe, para posteriormente comenzar a formar y retornar dicha url.
-19. **protected function urlModulo()**: agrega el modulo que se está trabajando a la url de la aplicación, si no hay modulo retornará false.
-20. **protected function getUrl($metodo = "", $data = [])**: Devuelve la estructura de la url solicitada, construye la url a partir de un método, si sus parámetros están vacíos, retornará la url actual.
-21. **protected function obtUrl($metodo = "", $data = [])**: Devuelve la estructura de la url solicitada, construye la url a partir de un método, si el método no existe, construye la url de la forma convencional (base/controlador/...), si los parámetros están vacíos, retornará la url actual.
-22. **function getModulo($obj)**: Retorna el nombre del módulo en el que se encuentra el objeto.
-23. **private function getModelo()**: Verifica si el controlador tiene un modelo correspondiente. Para que el modelo del controlador sea conseguido debe tener el nombre del Controlador en singular.
-24. **protected function eliminarDatos($id)**: función estándar para eliminar registros de la base de datos, funcional solo con modelos que extiendan del objeto DataModel.
-25. **protected function _404()**: Genera una excepción 404.
-26. **protected function obtenerListaGet($lista)**: Retorna una lista a partir de un arreglo, si al recorrer el array no encuentra datos, retornará false.
-27. **protected function respuestaAjax($respuesta, $tipo = 2)**: Devuelve contenido para una solicitud via ajax, permite imprimir la respuesta de la solicitud realizada sin esperar llegar a la vista.
-28. **protected function respuestaJson($respuesta)**: Retorna la representación JSON del valor dado.
-29. **protected function redireccionar($url)**: Redirecciona a la url dada.
-30. **protected function obtURLApp()**: Retorna la aurl de la aplicación actual. 
-31. **protected function obtJson($path)**: Retorna un arreglo a partir de un archivo JSON.
-32. **protected function layout($layout)**: Define el layout a utilizar.
-33. **protected function data($data, $valor = "")**: Asigna los parametros pasados para que puedan ser accedidos desde la vista.
+1. **function __construct($ejecucion, $parametros = [], $titulo = "")**: Contructor de Jvista.
+2. **private function validarPaginaConsulta()**: Verifica la estructura de la url manejada para la funcionalidad de la vista.
+3. **private function establecerValoresDefault()**.
+4. **private function realizarConsulta()**.
+5. **private function procesarArrayData($data)**: Procesa la informacion para una vista a partir de un arreglo.
+6. **private function obtInformacionObjeto($metodo = FALSE)**: Obtiene la información a renderizar desde un objeto dado.
+7. **private function _ejecutarFuncionData()**.
+8. **private function obtenerNombreCampos()**: obtiene los nombres de los campos consultados a base de datos.
+9. **private function obtConsultaPaginada()**: ejecuta la consulta de la vista agregando el limite de registros requeridos.
+10. **function render($function = "", $parametrosFuncion = [])**: Retorna la vista renderizada.
+11. **private function checkMensajes()**.
+12. **private function checkTitulo()**: Renderiza el titulo de la vista.
+13. **private function procesarControlFila()**.
+14. **private function procesarFormBusqueda()**.
+15. **private function procesarAccionesFila()**: Verifica si se agregaron acciones a una fila.
+16. **private function _validarPerfilesFila($accionFila)**: Verifica los perfiles que pueden visualizar una opcion de la fila a renderizar.
+17. **private function crearTitulos()**: Crea los titulos de la tabla.
+18. **private function obtParametrosOrden()**.
+19. **private function procesarAcciones()**.
+20. **private function crearPaginador()**: Genera el páginador de la vista.
+21. **function accionesFila($acciones)**.
+22. **function acciones($acciones = FALSE)**: Define acciones generales para la vista.
+23. **function tabla()**: Retorna el objeto Table Selector.
+24. **private function checkGlobals()**: Verifica si existen arreglos GLobales de configuración para el estilo.
+25. **function addFiltros($filtros)**: Permite agregar filtros a la vista.
+26. **function renderFiltros()**.
+27. **private function urlFiltro($params = [])**: Retorna la url para un filtro de la vista.
+28. **function procesarNoRegistros()**.
+29. **function obtTotalRegistros()**.
+30. **function obtConsulta()**.
+31. **static function msj($idVista, $tipo, $msj, $redireccion = "")**: Crea mensajes a mostrar en la vista.
+32. **function addMensajeNoRegistros($msj, $cssDiv = [])**: Permite personalizar un mensaje en caso de no haber registros.
+33. **function clausula($nombreClausula, $valores)**: Permite agregar clausulas a la consulta realizada por la vista.
+34. **function funcionFila($numeroFila, $function)**.
+35. **private function procesarURL($params, $print = FALSE)**: Gestiona la url de los enlaces a usar en la página.
+36. **private function checkConfig($config = [])**.
+37. **function configuracion($configuracion, $valor = "")**: Permite definir valores de configuracion para la vista creada.
+38. **private function _obtTemplate($template, $params)**: Renderiza el contenido en plantillas predeterminadas.
+39. **protected function _imprimir()**.
+40. **private function _procesarParametros()**.
+41. **private function _definirKeys($data)**: Arma en un array las keys por las que se construye la tabla.
+
 
 Métodos obsoletos:
 ---

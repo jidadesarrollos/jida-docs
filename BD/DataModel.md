@@ -1,10 +1,10 @@
-# Controllers
-La clase controller permite la ultilización de métodos comunes últiles para facilitar el ejercicio del desarrollo de cualquier proyecto.
+# DataModel
+Clase Padre de modelos.
 
 Sinopsis
 ---
 ```php
-class Controller{
+class DataModel {
  ....
 }
 ```

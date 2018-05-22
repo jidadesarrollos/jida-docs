@@ -10,60 +10,60 @@ class JVista {
 ```
 Parámetros
 ---
-- **private $dataVista**.
-- **$ordenamientos**.
-- **$buscador**.
-- **private $_debug**.
-- **private $nroFilas**.
-- **private $_ce**.
-- **private $paginasMostradas**.
-- **private $totalPaginas**.
-- **private $titulos**.
-- **private $titulosKey**.
-- **private $contenedorAcciones**.
-- **private $accionesFila**.
-- **private $_parametrosGET**.
-- **$camposOrder**: Permite definir los campos de ordenamiento para cada titulo.
-- **private $configFilaOpciones**: Define la configuracion para la fila de opciones de la vista.
-- **private $ejecucion;**.
-- **private $_ordenamientos;**.
-- **private $_tipoOrdenamiento;**: Tipo de ordenamiento, asc o desc.
-- **private $_campoOrdenar;**: Nombre del campo con el cual se solicita ordenar la consulta.
-- **private $titulo;**.
-- **private $_funcionData;**: Funcion pasada por el usuario a ejecutar sobre la data obtenida.
-- **private $_parametrosFuncionData;**.
-- **private $clausulas;**: Arreglo de clausulas agregadas a la consulta a base de datos implementada por el objeto.
-- **private $acciones;**: acciones Permite definir acciones para toda la vista.
-- **$controlFila;**: Define si las filas llevaran algún control.
-- **$funcionNoRegistros;**.
-- **private $parametroPagina;**.
-- **private $usaBD;**.
-- **private $queryString;**: Parametros pasados como querystring y que son manipulados por el objeto.
-- **$analizaURL;**: Define si debe analizarse la URL, si esta en true se tratara la url de conformidad con la estructura de urls usada por JidaFramework.
-- **private $mensajeNoRegistros;**: Mensaje a mostrar si no se consigues registros.
-- **private $htmlPersonalizado;**.
-- **private $filtros;**: definir los objetos de filtro.
-- **private $tabla;**: Objeto TablaSelector.
-- **private $campos;**.
-- **private $nameInputLinea;**.
-- **private $configTabla;**.
-- **private $configAcciones;**.
-- **private $configAccionesFila;**.
-- **private $configContenedorAcciones;**.
-- **private $configFiltros;**.
-- **private $configArticleVista;**.
-- **private $configSeccionForm;**.
-- **private $registros;**: Data obtenida de la consulta a base de datos.
-- **private $totalRegistros;**: Numero total de registros obtenidos.
-- **private $paginador;**: objeto ListaSelector como paginador.
-- **private $paginaActual;**.
-- **private $configPaginador;**.
-- **private $paginaConsulta;**: Página donde consulta el paginador para traer nuevos registros.
-- **private $objeto;**: var object $objeto Objeto implementado.
-- **private $urlActual;**.
-- **private $idVista;**.
-- **private $data;**.
-- **private $keys;**.
+- **private $dataVista**
+- **$ordenamientos**
+- **$buscador**
+- **private $_debug**
+- **private $nroFilas**
+- **private $_ce**
+- **private $paginasMostradas**
+- **private $totalPaginas**
+- **private $titulos**
+- **private $titulosKey**
+- **private $contenedorAcciones**
+- **private $accionesFila**
+- **private $_parametrosGET**
+- **$camposOrder**
+- **private $configFilaOpciones**
+- **private $ejecucion**
+- **private $_ordenamientos**
+- **private $_tipoOrdenamiento**
+- **private $_campoOrdenar**
+- **private $titulo**
+- **private $_funcionData**
+- **private $_parametrosFuncionData**
+- **private $clausulas**
+- **private $acciones**
+- **$controlFila**
+- **$funcionNoRegistros**
+- **private $parametroPagina**
+- **private $usaBD**
+- **private $queryString**
+- **$analizaURL**
+- **private $mensajeNoRegistros**
+- **private $htmlPersonalizado**
+- **private $filtros**
+- **private $tabla**
+- **private $campos**
+- **private $nameInputLinea**
+- **private $configTabla**
+- **private $configAcciones**
+- **private $configAccionesFila**
+- **private $configContenedorAcciones**
+- **private $configFiltros**
+- **private $configArticleVista**
+- **private $configSeccionForm**
+- **private $registros**
+- **private $totalRegistros**
+- **private $paginador**
+- **private $paginaActual**
+- **private $configPaginador**
+- **private $paginaConsulta**
+- **private $objeto**
+- **private $urlActual**
+- **private $idVista**
+- **private $data**
+- **private $keys**
 
 Métodos:
 ---

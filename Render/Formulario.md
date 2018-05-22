@@ -1,5 +1,5 @@
 # Formulario
-La clase controller permite la ultilización de métodos comunes últiles para facilitar el ejercicio del desarrollo de cualquier proyecto.
+Renderiza formularios configurados en html visible para el usuario, permite la validación de los mismos y la definición de su estructura mediante los distintos métodos que aplica la clase.
 
 # JIDA FRAMEWORK
 Framework para aplicaciones web, con sintaxis simple, actual y elegante.

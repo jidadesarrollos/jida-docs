@@ -10,48 +10,22 @@ class Selector {
 ```
 Parámetros
 ---
-- **private $layout**
-- **$name**
-- **$tagPost**
-- **$method**
-- **$action**
-- **$enctype**
-- **$target**
-- **public $setHtmlEntities**
-- **$tagForm**
-- **$botonEnvio**
-- **$jidaValidador**
-- **private $_consultaUpdate**
-- **$_labelBotonEnvio**
-- **private $_numeroExcepciones**
-- **private $_fieldsets**
-- **private $_id**
-- **$labels**
-- **private $_titulo**
+- **protected $selector**
+- **protected $id**
+- **protected $atributos**
+- **protected $envoltorio**
+- **$data**
+- **$class**
+- **$style**
+- **$attr**
+- **$contenido**
+- **$padreInner**
+- **private $nodos**
+- **private $selectorCreado**
+- **protected $innerHTML**
+- **private $propiedades**
 - **private $_ce**
-- **private $_arrayOrden**
-- **private $_plantillaItem**
-- **private $_plantillaBotones**
-- **private $_plantillaTitulo**
-- **private $_configuracion**
-- **private $_columnasTotal**
-- **private $_css**
-- **private $_cssTitulo**
-- **private $html**
-- **private $_exprEstructura**
-- **private $_path**
-- **private $_campos**
-- **private $_estructura**
-- **private $_totalCampos**
-- **private $_filaPivote**
-- **$_botones**
-- **private $_idEdicion**
-- **private $_dataUpdate**
-- **private $_dataUpdateMultiple**
-- **private $_errores**
-- **private $_validaciones**
-- **private $_dataCampos**
-
+- **protected $noCierre**
 
 Métodos:
 ---
@@ -80,8 +54,3 @@ Métodos:
 23. **function campo($id)**: Permite acceder al objeto selector de un campo.
 24. **function obtConsultaUpdate()**.
 25. **function obtErrores()**.
-
-Métodos obsoletos:
----
-1. **function armarFormularioEstructura()**: Realiza lo mismo que la funcion armarFormulario, se mantiene la funcion para poder realizar la transicion de formularios usados con la clase Formulario, sin embargo el funcionamiento es el mismo ahora que el de armarFormulario, por tanto no se aconseja su uso..
-2. **function armarFormulario()**: Obsoleto, usar método render.

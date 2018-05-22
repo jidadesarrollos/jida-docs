@@ -7,7 +7,7 @@ Framework para aplicaciones web, con sintaxis simple, actual y elegante.
 Sinopsis
 ---
 ```php
-class \jida\Core\Controller extends Controller{
+class Controller{
  ....
 }
 ```

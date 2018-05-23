@@ -23,6 +23,6 @@ Framework/init/htaccess-example.
 - [Selector](Render/Selector.md)
 - [JVista](Render/JVista.md)
 - [DataModel](BD/DataModel.md)
-- [DataVista](Core/DataVista.md)
+- [DataVista](Core/Manager/DataVista.md)
 - [Validador](Core/Validador.md)
 - [ValidadorJida](Render/ValidadorJida.md)

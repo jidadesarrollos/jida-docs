@@ -1,41 +1,41 @@
-# Controllers
-La clase controller permite la ultilización de métodos comunes últiles para facilitar el ejercicio del desarrollo de cualquier proyecto.
+# DataVista
+ Clase para pasar información a Vistas y Layouts.
 
 Sinopsis
 ---
 ```php
-class Controller{
+class DataVista {
  ....
 }
 ```
 Parámetros
 ---
-- **$temaLayout**: Define el tema de diseño a implementar en la aplicacion.
-- **$multiidioma**: Define si la aplicación maneja multiples idiomas, Si es colocada en true el controller validara la variable $idioma y la incluira en las urls.
-- **$layout**: Define el layout a usar por el controlador.
-- **$idioma**:Define el idioma manejado al momento de la ejecucion del controlador.
-- **$preEjecucion**: Define un metodo a ejecutar previo a la ejecucion de metodos accedidos por url.
-- **$postEjecucion**: Define un metodo a ejecutar posterior a la ejecucion de metodos accedidos por url.
-- **protected $modelo**: Define el Modelo a usar en el controlador.
-- **protected $modelos**: Permite definir los modelos a usar en el controlador.
-- **$vista**: Permite especificar una vista para el método.
-- **$requireJS**: Archivos Javascript Requeridos.
-- **$requireCSS**: Archivos CSS Requeridos en la vista.
-- **protected $url**: Define la URL principal de acceso para el controlador (En caso de ser usada).
-- **private $post**: Data POST de Formulario.
-- **private $get**: Data Get pasada por url.
-- **private $request**: Contiene la data de solicitud o petición.
-- **private $_clase**: Nombre de la clase.
-- **private $_nombreController**: Nombre del controlador.
-- **protected $_modulo**: Nombre del módulo.
-- **protected $_metodo**: Nombre del método.
-- **protected $_controlador**: Nombre del controlador.
-- **$__url**: URL Actual Registra la URL ingresada en el navegador.
-- **$dv**: Instancia de clase DataVista.
-- **$usuario**: Objeto User instanciado al iniciar sesion. Si la sesion no esta iniciada retorna vacio.
-- **$manejoParams**: Define el funcionamiento que realiza el framework para manejar los parametros en las URL.
-- **private $_controladorURL**: Registra el nombre del controlador para la url.
-- **private $_urlBase**: Registra el nombre de la url base.
+- **$js**
+- **$css**
+- **$jsAjax**
+- **$title**
+- **$meta_descripcion**
+- **$meta_autor**
+- **$meta_image**
+- **$meta_url**
+- **$meta**
+- **$url_canonical**
+- **$responsive**
+- **$robots**
+- **$solicitudAjax**
+- **$google_verification**
+- **$metodo**
+- **$modulo**
+- **$controlador**
+- **$idioma**
+- **$jsAgregado**
+- **$cssAgregado**
+- **$_esJadmin**
+- **$_esApp**
+- **$_urlCssBase**
+- **$_urlJsBase**
+- **$private $_plantilla**
+- **$private $_path**
 
 Métodos:
 ---
@@ -73,14 +73,7 @@ Métodos:
 32. **protected function layout($layout)**: Define el layout a utilizar.
 33. **protected function data($data, $valor = "")**: Asigna los parametros pasados para que puedan ser accedidos desde la vista.
 
-Parámetros obsoletos:
----
-1. **$tituloPagina**: Define el titulo de la pagina a colocar en la etiqueta title del head del sitio.
-2. **$metaDescripcion**: Define el contenido de la meta-etiqueta description para uso de los buscadores.
-3. **$data**: Arreglo que contiene la información que desee pasarse a la vista.
-
-
 Métodos obsoletos:
 ---
-1. **protected function getString($valor)**: Al ingresar un valor, nos devuelve el mismo valor en tipo de dato string. Para lograrlo éste método usa otro método de nombre obtString().
-2. **protected function obtEntero($valor)**: Al ingresar un valor, nos devuelve el mismo valor en tipo de dato entero. Para lograrlo éste método usa otro método de nombre entero().
+1. **function addJsModulo($js, $modulo = "")**: Permite agregar archivos JS pertenecientes a un módulo especifico.
+2. **function setVistaAsTemplate($nombreVista, $path = "")**

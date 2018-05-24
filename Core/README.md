@@ -3,7 +3,7 @@ Carpeta que aloja las clases de uso general en el framework.
 
 # Clases y sub carpetas
 
-- [Controllers](Controllers.md)
+- [Controller](Controllers.md)
 - [Validador](Validador.md)
 - [Manager [Carpeta]](Manager)
 - [GeneradorCodigo [Carpeta]](GeneradorCodigo)

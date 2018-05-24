@@ -2,5 +2,8 @@
 Carpeta que contiene clases tipo generador de códigos.
 
 # Clases
-
-- [Controllers](Controllers.md)
+- [GeneradorArchivo](GeneradorArchivo.md)
+- [GeneradorCodigo](GeneradorCodigo.md)
+- [GeneradorController](GeneradorController.md)
+- [GeneradorModelo](GeneradorModelo.md)
+- [GeneradorObjeto](GeneradorObjeto.md)

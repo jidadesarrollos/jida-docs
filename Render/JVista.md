@@ -23,27 +23,27 @@ Parámetros
 - **private $contenedorAcciones**
 - **private $accionesFila**
 - **private $_parametrosGET**
-- **$camposOrder**
-- **private $configFilaOpciones**
+- **$camposOrder**: Permite definir los campos de ordenamiento para cada titulo.
+- **private $configFilaOpciones**: Define la configuracion para la fila de opciones de la vista.
 - **private $ejecucion**
 - **private $_ordenamientos**
-- **private $_tipoOrdenamiento**
-- **private $_campoOrdenar**
+- **private $_tipoOrdenamiento**: Tipo de ordenamiento, asc o desc.
+- **private $_campoOrdenar**: Nombre del campo con el cual se solicita ordenar la consulta.
 - **private $titulo**
-- **private $_funcionData**
+- **private $_funcionData**: Funcion pasada por el usuario a ejecutar sobre la data obtenida.
 - **private $_parametrosFuncionData**
-- **private $clausulas**
-- **private $acciones**
-- **$controlFila**
+- **private $clausulas**: Arreglo de clausulas agregadas a la consulta a base de datos implementada por el objeto.
+- **private $acciones**: acciones permite definir acciones para toda la vista.
+- **$controlFila**: Define si las filas llevaran algún control.
 - **$funcionNoRegistros**
 - **private $parametroPagina**
 - **private $usaBD**
-- **private $queryString**
-- **$analizaURL**
-- **private $mensajeNoRegistros**
+- **private $queryString**: Parametros pasados como querystring y que son manipulados por el objeto.
+- **$analizaURL**: Define si debe analizarse la URL.
+- **private $mensajeNoRegistros**: Mensaje a mostrar si no se consigues registros.
 - **private $htmlPersonalizado**
-- **private $filtros**
-- **private $tabla**
+- **private $filtros**: Permite definir los objetos de filtro.
+- **private $tabla**: Objeto TablaSelector.
 - **private $campos**
 - **private $nameInputLinea**
 - **private $configTabla**
@@ -53,13 +53,13 @@ Parámetros
 - **private $configFiltros**
 - **private $configArticleVista**
 - **private $configSeccionForm**
-- **private $registros**
-- **private $totalRegistros**
-- **private $paginador**
+- **private $registros**: Data obtenida de la consulta a base de datos.
+- **private $totalRegistros**: Numero total de registros obtenidos.
+- **private $paginador**: objeto ListaSelector como paginador.
 - **private $paginaActual**
 - **private $configPaginador**
-- **private $paginaConsulta**
-- **private $objeto**
+- **private $paginaConsulta**: PAgina donde consulta el paginador para traer nuevos registros.
+- **private $objeto**:  Objeto implementado.
 - **private $urlActual**
 - **private $idVista**
 - **private $data**

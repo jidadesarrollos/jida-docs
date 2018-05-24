@@ -10,13 +10,13 @@ class ValidadorJida extends \Jida\Core\Validador {
 ```
 Parámetros
 ---
-- **private $validaciones**
-- **private $valorCampo**
-- **private $expresiones**
-- **private $error**
-- **private $campo**
+- **private $validaciones**: Arreglo opcional con parametros de la validación.
+- **private $valorCampo**: Registra el valor del campo a validar.
+- **private $expresiones**: Arreglo con las expresiones disponibles para validar.
+- **private $error**: indica si existe un error en el campo 0 no 1 existe..
+- **private $campo**: Arreglo con todos los datos del campo.
 - **private $mensajesDefecto**
-- **private $opciones**
+- **private $opciones**: Registro de opciones del Campo.
 
 Métodos:
 ---
@@ -36,4 +36,4 @@ Métodos:
 
 Parámetros obsoletos:
 ---
-- **private $validacionesDefault**
+- **private $validacionesDefault**: Valores por defecto para las validaciones.

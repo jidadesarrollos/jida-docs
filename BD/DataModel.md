@@ -8,7 +8,7 @@ class DataModel {
  ....
 }
 ```
-Parámetros
+Propiedades
 ---
 - **protected $debug**
 - **protected $tablaBD**

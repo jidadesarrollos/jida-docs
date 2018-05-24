@@ -1,8 +1,5 @@
-# Core
-Carpeta que aloja las clases de uso general en el framework.
+# Core/Manager
+Carpeta que contiene clases genéricas tipo manejador.
 
 # Clases
-
-- [Controllers](Controllers.md)
-- [DataVista](Manager/DataVista.md)
-- [Validador](Validador.md)
+- [DataVista](DataVista.md)

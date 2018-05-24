@@ -10,20 +10,20 @@ class Selector {
 ```
 Parámetros
 ---
-- **protected $selector**
+- **protected $selector**: Define el selector a crear.
 - **protected $id**
 - **protected $atributos**
 - **protected $envoltorio**
-- **$data**
+- **$data**: Atributos data para el selector.
 - **$class**
 - **$style**
-- **$attr**
-- **$contenido**
-- **$padreInner**
-- **private $nodos**
-- **private $selectorCreado**
-- **protected $innerHTML**
-- **private $propiedades**
+- **$attr**: Arreglo para agregar atributos adicionales al selector.
+- **$contenido**: Contenido del selector, que puede incluir el innerHTML y otros selectores.
+- **$padreInner**: Define si es el selector contenedor del InnerHTML o no.
+- **private $nodos**: Nodo de selectores hijos del selector.
+- **private $selectorCreado**: Contiene el HTML que se genera al crear el selector.
+- **protected $innerHTML**: Contenido especifico a agregar.
+- **private $propiedades**. Permite agregar propiedades adicionales al selector.
 - **private $_ce**
 - **protected $noCierre**
 

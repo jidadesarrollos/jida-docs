@@ -34,7 +34,7 @@ Parámetros
 - **$_esApp**
 - **$_urlCssBase**
 - **$_urlJsBase**
-- **$private $_plantilla**
+- **$private $_plantilla**: Define una ruta absoluta para el template de la vista a usar, si no se encuentra.
 - **$private $_path**
 
 Métodos:

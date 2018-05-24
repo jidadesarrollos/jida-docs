@@ -5,5 +5,5 @@ Carpeta que aloja las clases de uso general en el framework.
 
 - [Controllers](Controllers.md)
 - [Validador](Validador.md)
-- [Manager](Manager)
-- [GeneradorCodigo](GeneradorCodigo)
+- [Manager [Carpeta]](Manager)
+- [GeneradorCodigo [Carpeta]](GeneradorCodigo)

@@ -19,43 +19,43 @@ Propiedades
 - **private $usoLimit**
 - **private $_ce**
 - **private $condicion**
-- **private $_limit**
-- **protected $prefijoBD**
+- **private $_limit**: estring de la clausula limit.
+- **protected $prefijoBD**: Permite definir un prefijo utilizado en la tabla de base de datos.
 - **protected $fecha_creacion**
 - **protected $fecha_modificacion**
-- **protected $nivelORM**
-- **protected $prefijoRelacional**
+- **protected $nivelORM**: Define el nivel de navegación del ORM.
+- **protected $prefijoRelacional**: Permite registrar validaciones para registros unicos.
 - **protected $unico**
 - **protected $registroMomentoGuardado**
 - **protected $registroUser**
-- **protected $tieneUno**
-- **protected $tieneMuchos**
-- **protected $pertenece**
-- **protected $perteneceAUno**
-- **private $query**
-- **private $nivelActualORM**
-- **protected $pk**
+- **protected $tieneUno**: Arreglo que define las relaciones uno a uno del objeto.
+- **protected $tieneMuchos**: Arreglo que define las relaciones uno a muchos de un objeto.
+- **protected $pertenece**: Arreglo que define las relaciones muchos a muchos del objeto.
+- **protected $perteneceAUno**: Registra la relacion inversa Uno a Muchos.
+- **private $query**: Consulta de base de datos construida.
+- **private $nivelActualORM**: Define el nivel actual del ORM.
+- **protected $pk**: Nombre de la Clave primaria de base de datos.
 - **private $tablaQuery**
-- **protected $bd**
-- **protected $configuracionBD**
-- **private $propiedades**
-- **private $consultaRelaciones**
-- **private $propiedadesObjetos**
-- **private $usoWhere**
-- **protected $usoBD**
-- **private $_groupBy**
-- **private $order**
-- **private $totalInserciones**
-- **private $idsResultantes**
-- **private $valoresIniciales**
-- **private $_clase**
-- **protected $resultBD**
-- **private $reflector**
-- **private $_paginar**
-- **private $_paginaConsultada**
-- **private $_paginas**
-- **protected $filasPagina**
-- **protected $_totalRegistros**
+- **protected $bd**: bjeto de conexión a Base de datos.
+- **protected $configuracionBD**: Define la configuración a usar para la conexión a base de datos.
+- **private $propiedades**: Arreglo con las propiedades de base de datos del objeto.
+- **private $consultaRelaciones**: Registra el string de las consultas para obtener la información de todas las relaciones creadas explicitamente en el objeto instanciado.
+- **private $propiedadesObjetos**: Arreglo que registra las propiedades de la clase que son objetos.
+- **private $usoWhere**: Permite identificar si la consulta contiene una clausula where.
+- **protected $usoBD**: Dedermina si es requerido el uso de base de datos.
+- **private $_groupBy**: Registra la clausula order by de una consulta.
+- **private $order**: Registra la clausula order de una sentencia a ejecutar.
+- **private $totalInserciones**: Registra el numero de inserciones en el metodo salvarTodo.
+- **private $idsResultantes**: Arreglo de ids resultantes de una insercion múltiple.
+- **private $valoresIniciales**: Registra los valores iniciales al realizar una instancia de base de datos.
+- **private $_clase**: Nombre de la clase instanciada.
+- **protected $resultBD**: Instancia de objeto para retorno de data de Base de Datos.
+- **private $reflector**: Objeto ReflectionClass instanciado con el objeto.
+- **private $_paginar**: Define si una consulta realizada deberá ser paginada.
+- **private $_paginaConsultada**: Numero de pagina consultada en la paginacion.
+- **private $_paginas**: Numero de paginas resultante de una consulta paginada.
+- **protected $filasPagina**: Nro de registros a mostrar por página.
+- **protected $_totalRegistros**: Numero total de registros para una consulta..
 
 Métodos:
 ---

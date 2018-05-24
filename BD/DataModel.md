@@ -36,7 +36,7 @@ Propiedades
 - **private $nivelActualORM**: Define el nivel actual del ORM.
 - **protected $pk**: Nombre de la Clave primaria de base de datos.
 - **private $tablaQuery**
-- **protected $bd**: bjeto de conexión a Base de datos.
+- **protected $bd**: Objeto de conexión a Base de datos.
 - **protected $configuracionBD**: Define la configuración a usar para la conexión a base de datos.
 - **private $propiedades**: Arreglo con las propiedades de base de datos del objeto.
 - **private $consultaRelaciones**: Registra el string de las consultas para obtener la información de todas las relaciones creadas explicitamente en el objeto instanciado.

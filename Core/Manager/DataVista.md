@@ -10,11 +10,11 @@ class DataVista {
 ```
 Parámetros
 ---
-- **$js**
-- **$css**
-- **$jsAjax**
-- **$title**
-- **$meta_descripcion**
+- **$js**: Arreglo Global de archivos javascript a usar por la vista.
+- **$css**: Arreglo Global con css a usar por la vista.
+- **$jsAjax**: Arreglo que registra los js a incluir en llamadas ajax.
+- **$title**: Titulo de la Página HTML.
+- **$meta_descripcion**: Representa la etiqueta meta property description de la página.
 - **$meta_autor**
 - **$meta_image**
 - **$meta_url**

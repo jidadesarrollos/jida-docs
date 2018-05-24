@@ -17,40 +17,40 @@ Parámetros
 - **$action**
 - **$enctype**
 - **$target**
-- **public $setHtmlEntities**
-- **$tagForm**
-- **$botonEnvio**
-- **$jidaValidador**
-- **private $_consultaUpdate**
-- **$_labelBotonEnvio**
+- **public $setHtmlEntities**: Determina si los valores del formulario deben ser validados o cambiados a entidades HTML.
+- **$tagForm**:  Define si la etiqueta form debe ser integrada.
+- **$botonEnvio**: Define si se agrega un boton submit al formulario.
+- **$jidaValidador**:  Define si se agregan las propiedades para uso del validador js.
+- **private $_consultaUpdate**: Registra el query realizado para obtener la data en modo update.
+- **$_labelBotonEnvio**: Label a usar en el boton de envio por defecto.
 - **private $_numeroExcepciones**
 - **private $_fieldsets**
-- **private $_id**
-- **$labels**
-- **private $_titulo**
-- **private $_ce**
-- **private $_arrayOrden**
-- **private $_plantillaItem**
+- **private $_id**: id del formulario.
+- **$labels**: Define si el formulario lleva labels o no.
+- **private $_titulo**: Agrega un título al formulario.
+- **private $_ce**: Código de excepcion para el objeto.
+- **private $_arrayOrden**: Registra el orden de los campos.
+- **private $_plantillaItem**: Estructura html que se implementa por cada item del formulario.
 - **private $_plantillaBotones**
 - **private $_plantillaTitulo**
-- **private $_configuracion**
-- **private $_columnasTotal**
+- **private $_configuracion**: Configuracion del formulario.
+- **private $_columnasTotal**: Define el numero de columnas a manejar en el grid.
 - **private $_css**
 - **private $_cssTitulo**
 - **private $html**
-- **private $_exprEstructura**
-- **private $_path**
-- **private $_campos**
-- **private $_estructura**
+- **private $_exprEstructura**: Expresion regular para validar estructura.
+- **private $_path**: Define la ubicacion del archivo de configuracion del formulario.
+- **private $_campos**: Arreglo de campos del formulario.
+- **private $_estructura**: Estructura del formulario.
 - **private $_totalCampos**
 - **private $_filaPivote**
-- **$_botones**
-- **private $_idEdicion**
-- **private $_dataUpdate**
-- **private $_dataUpdateMultiple**
-- **private $_errores**
+- **$_botones**: Arreglo con botones del formulario.
+- **private $_idEdicion**: Define el identificador para buscar data en modo update.
+- **private $_dataUpdate**. Data obtenida para mostrar en modo update.
+- **private $_dataUpdateMultiple**: Guarda el total de registros traidos en la consulta a base de datos para manejarlo en campos de selección multiple.
+- **private $_errores**: Registra los errores obtenidos en el formulario luego de la validación.
 - **private $_validaciones**
-- **private $_dataCampos**
+- **private $_dataCampos**: Arreglo q que contiene los objetos de cada campo leido del json.
 
 
 Métodos:

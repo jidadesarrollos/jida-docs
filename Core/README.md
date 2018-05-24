@@ -1,8 +1,9 @@
 # Core
 Carpeta que aloja las clases de uso general en el framework.
 
-# Clases
+# Clases y sub carpetas
 
 - [Controllers](Controllers.md)
-- [DataVista](Manager/DataVista.md)
 - [Validador](Validador.md)
+- [Manager](/Manager)
+- [GeneradorCodigo](/GeneradorCodigo)

@@ -10,10 +10,10 @@ class Validador {
 ```
 Parámetros
 ---
-- **protected $mensajeError**
-- **protected $validacion**
-- **protected $dataValidaciones**
-- **private $errors**
+- **protected $mensajeError**: Guarda el String del mensaje de Error.
+- **protected $validacion**: TRUE si se cumple la valicación, FALSE caso contrario.
+- **protected $dataValidaciones**: Arreglo asociativo con validaciones y mensajes de error.
+- **private $errors**: Arreglo que registra los errores.
 
 Métodos:
 ---
